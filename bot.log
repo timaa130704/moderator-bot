@@ -1,0 +1,1865 @@
+2026-04-22 17:23:19,046 | INFO     | __main__ | Инициализация базы данных...
+2026-04-22 17:23:19,052 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:23:19,183 | INFO     | __main__ | Бот запускается...
+2026-04-22 17:23:40,391 | ERROR    | asyncio | Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000000000A841100>
+2026-04-22 17:23:51,080 | INFO     | __main__ | Инициализация базы данных...
+2026-04-22 17:23:51,081 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:23:51,217 | INFO     | __main__ | Бот запускается...
+2026-04-22 17:24:12,404 | ERROR    | asyncio | Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000000000A268D40>
+2026-04-22 17:29:37 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:29:37 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:29:37 | INFO     | __main__ | 🔄 Используется прокси: socks5://45.153.231.229:8080
+2026-04-22 17:29:44 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:29:44 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:29:44 | INFO     | __main__ | 🔄 Используется прокси: socks5://45.153.231.229:8080
+2026-04-22 17:30:40 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:30:40 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:30:40 | INFO     | __main__ | 🔄 Используется прокси: socks5://45.153.231.229:8080
+2026-04-22 17:30:40 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:31:40 | ERROR    | __main__ | ❌ Критическая ошибка: Proxy connection timed out: 60
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\async_\asyncio\v2\_proxy.py", line 79, in connect
+    return await self._connect(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\async_\asyncio\v2\_proxy.py", line 130, in _connect
+    await connector.connect(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\_connectors\socks5_async.py", line 43, in connect
+    data = await stream.read_exact(socks5.AuthMethodReply.SIZE)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\async_\asyncio\v2\_stream.py", line 32, in read_exact
+    return await self._reader.readexactly(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 734, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 527, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\async_\asyncio\v2\_proxy.py", line 78, in connect
+    async with async_timeout.timeout(timeout):
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py", line 111, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp_socks\connector.py", line 72, in _wrap_create_connection
+    return await self._connect_via_proxy(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp_socks\connector.py", line 135, in _connect_via_proxy
+    stream = await proxy.connect(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\python_socks\async_\asyncio\v2\_proxy.py", line 86, in connect
+    raise ProxyTimeoutError('Proxy connection timed out: {}'.format(timeout)) from e
+python_socks._errors.ProxyTimeoutError: Proxy connection timed out: 60
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp_socks\connector.py", line 81, in _wrap_create_connection
+    raise ProxyTimeoutError(str(e)) from e
+aiohttp_socks._errors.ProxyTimeoutError: Proxy connection timed out: 60
+2026-04-22 17:31:41 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:32:49 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:32:49 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:32:49 | INFO     | __main__ | 🔄 Используется прокси: socks5://45.153.231.229:8080
+2026-04-22 17:32:50 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:33:24 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:33:24 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 17:34:21 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:34:21 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:34:21 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:34:21 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:34:42 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 17:34:42 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:34:56 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:34:56 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:34:56 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:34:56 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:35:17 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 17:35:17 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:36:44 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:36:44 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:36:44 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:36:44 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:37:05 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 17:37:05 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:38:08 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:38:08 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:38:08 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:38:08 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:38:29 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 17:38:29 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:38:40 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:38:40 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:38:40 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:38:40 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:39:16 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:39:16 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 17:39:26 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:39:26 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:39:26 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:39:27 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:39:39 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:39:39 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:39:58 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:39:58 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:39:58 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:39:58 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:40:10 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:40:10 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:40:19 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:40:19 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:40:19 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:40:19 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:40:31 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:40:31 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:40:38 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:40:38 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:40:38 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:40:38 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:40:50 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:40:50 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:44:28 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:44:28 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:44:28 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:44:28 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:44:40 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:44:40 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:44:51 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:44:51 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:44:51 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:44:51 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:45:58 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:45:58 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:45:58 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:45:58 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:46:19 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 17:46:19 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:46:24 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:46:24 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:46:24 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:46:24 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:46:36 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:46:36 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 17:58:10 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 17:58:10 | INFO     | bot.database | БД инициализирована
+2026-04-22 17:58:10 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 17:58:11 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 17:58:23 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 17:58:23 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:01:47 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:01:47 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:01:47 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:01:47 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:01:59 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2026-04-22 18:01:59 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:02:27 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:02:27 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:02:27 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:02:27 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:02:48 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 18:02:49 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:04:13 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:04:13 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:04:13 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:04:13 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:04:34 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 18:04:35 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:10:04 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:10:04 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:10:04 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:10:04 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:10:07 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:10:08 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:10:23 | INFO     | aiogram.event | Update id=65504097 is handled. Duration 562 ms by bot id=8398659057
+2026-04-22 18:10:25 | INFO     | aiogram.event | Update id=65504098 is handled. Duration 296 ms by bot id=8398659057
+2026-04-22 18:10:27 | INFO     | aiogram.event | Update id=65504099 is handled. Duration 266 ms by bot id=8398659057
+2026-04-22 18:10:32 | INFO     | aiogram.event | Update id=65504100 is handled. Duration 344 ms by bot id=8398659057
+2026-04-22 18:10:33 | INFO     | aiogram.event | Update id=65504101 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:11:24 | INFO     | aiogram.event | Update id=65504102 is handled. Duration 218 ms by bot id=8398659057
+2026-04-22 18:11:26 | INFO     | bot.handlers.admin | Администратор 8006327885 открыл панель
+2026-04-22 18:11:26 | INFO     | aiogram.event | Update id=65504103 is handled. Duration 171 ms by bot id=8398659057
+2026-04-22 18:11:35 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:11:35 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:11:35 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:11:35 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:11:35 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:11:35 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:11:43 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:11:43 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:11:43 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:11:43 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:11:44 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:11:44 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:12:33 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:12:33 | INFO     | aiogram.event | Update id=65504104 is handled. Duration 610 ms by bot id=8398659057
+2026-04-22 18:12:36 | INFO     | bot.handlers.user | Пользователь 8006327885 начал анкету
+2026-04-22 18:12:36 | INFO     | aiogram.event | Update id=65504105 is handled. Duration 265 ms by bot id=8398659057
+2026-04-22 18:12:43 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:12:43 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:12:43 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:12:43 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:12:43 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:12:43 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:20:55 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:20:55 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:20:55 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:20:56 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:21:08 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:21:08 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:21:10 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:21:10 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:21:10 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:21:11 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:21:11 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:21:11 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:21:21 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:21:21 | INFO     | aiogram.event | Update id=65504106 is handled. Duration 750 ms by bot id=8398659057
+2026-04-22 18:21:27 | INFO     | aiogram.event | Update id=65504107 is handled. Duration 280 ms by bot id=8398659057
+2026-04-22 18:21:29 | INFO     | bot.handlers.user | Пользователь 8006327885 отменил анкету
+2026-04-22 18:21:29 | INFO     | aiogram.event | Update id=65504108 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 18:21:31 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:21:31 | INFO     | aiogram.event | Update id=65504109 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 18:21:32 | INFO     | aiogram.event | Update id=65504110 is handled. Duration 219 ms by bot id=8398659057
+2026-04-22 18:21:37 | INFO     | aiogram.event | Update id=65504111 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:21:39 | INFO     | aiogram.event | Update id=65504112 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 18:21:43 | INFO     | aiogram.event | Update id=65504113 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 18:21:50 | INFO     | aiogram.event | Update id=65504114 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 18:22:12 | ERROR    | bot.handlers.user | Ошибка сохранения заявки: table applications has no column named name
+2026-04-22 18:22:12 | INFO     | aiogram.event | Update id=65504115 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 18:22:49 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:22:49 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:22:49 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:22:50 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:22:50 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:22:50 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:22:52 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:22:52 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:22:52 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:22:52 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:22:53 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:22:53 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:23:01 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:23:01 | INFO     | aiogram.event | Update id=65504116 is handled. Duration 811 ms by bot id=8398659057
+2026-04-22 18:23:02 | INFO     | aiogram.event | Update id=65504117 is handled. Duration 280 ms by bot id=8398659057
+2026-04-22 18:23:05 | INFO     | aiogram.event | Update id=65504118 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 18:23:07 | INFO     | aiogram.event | Update id=65504119 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:23:09 | INFO     | aiogram.event | Update id=65504120 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:23:11 | INFO     | aiogram.event | Update id=65504121 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:23:24 | INFO     | bot.database | Заявка #1 сохранена
+2026-04-22 18:23:24 | INFO     | bot.handlers.user | Заявка #1 от 8006327885 сохранена
+2026-04-22 18:23:24 | INFO     | aiogram.event | Update id=65504122 is handled. Duration 141 ms by bot id=8398659057
+2026-04-22 18:23:59 | INFO     | aiogram.event | Update id=65504123 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:24:02 | INFO     | aiogram.event | Update id=65504124 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 18:24:03 | INFO     | aiogram.event | Update id=65504125 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 18:24:05 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:24:05 | INFO     | aiogram.event | Update id=65504126 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:24:18 | INFO     | aiogram.event | Update id=65504127 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:24:20 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:24:20 | INFO     | aiogram.event | Update id=65504128 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 18:24:23 | INFO     | aiogram.event | Update id=65504129 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:25:04 | INFO     | aiogram.event | Update id=65504130 is handled. Duration 281 ms by bot id=8398659057
+2026-04-22 18:25:05 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:25:05 | INFO     | aiogram.event | Update id=65504131 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:27:26 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:27:26 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:27:26 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:27:26 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:27:26 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:27:26 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:27:28 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:27:28 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:27:28 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:27:28 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:27:29 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:27:29 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:31:35 | INFO     | aiogram.event | Update id=65504132 is handled. Duration 640 ms by bot id=8398659057
+2026-04-22 18:31:36 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:31:36 | INFO     | aiogram.event | Update id=65504133 is handled. Duration 265 ms by bot id=8398659057
+2026-04-22 18:31:42 | INFO     | aiogram.event | Update id=65504134 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:31:42 | ERROR    | aiogram.event | Cause exception while process update id=65504134 by bot id=8398659057
+OperationalError: no such column: status
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 134, in cb_accept_application
+    await accept_application(app_id)
+  File "C:\python\moderator_bot\bot\database.py", line 71, in accept_application
+    await db.execute(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: status
+2026-04-22 18:32:01 | INFO     | aiogram.event | Update id=65504135 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:32:01 | ERROR    | aiogram.event | Cause exception while process update id=65504135 by bot id=8398659057
+OperationalError: no such column: status
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 134, in cb_accept_application
+    await accept_application(app_id)
+  File "C:\python\moderator_bot\bot\database.py", line 71, in accept_application
+    await db.execute(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: status
+2026-04-22 18:32:10 | INFO     | aiogram.event | Update id=65504136 is not handled. Duration 15 ms by bot id=8398659057
+2026-04-22 18:32:10 | ERROR    | aiogram.event | Cause exception while process update id=65504136 by bot id=8398659057
+OperationalError: no such column: status
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 172, in cb_reject_application
+    await reject_application(app_id)
+  File "C:\python\moderator_bot\bot\database.py", line 82, in reject_application
+    await db.execute(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: status
+2026-04-22 18:32:12 | INFO     | aiogram.event | Update id=65504137 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:32:17 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:32:17 | INFO     | aiogram.event | Update id=65504138 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 18:32:41 | INFO     | aiogram.event | Update id=65504139 is not handled. Duration 15 ms by bot id=8398659057
+2026-04-22 18:32:41 | ERROR    | aiogram.event | Cause exception while process update id=65504139 by bot id=8398659057
+OperationalError: no such column: status
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 172, in cb_reject_application
+    await reject_application(app_id)
+  File "C:\python\moderator_bot\bot\database.py", line 82, in reject_application
+    await db.execute(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: status
+2026-04-22 18:33:05 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:33:05 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:33:05 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:33:05 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:33:05 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:33:05 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:33:12 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:33:12 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:33:12 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:33:13 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:33:13 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:33:13 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:33:24 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:33:24 | INFO     | aiogram.event | Update id=65504140 is handled. Duration 827 ms by bot id=8398659057
+2026-04-22 18:33:25 | INFO     | aiogram.event | Update id=65504141 is handled. Duration 281 ms by bot id=8398659057
+2026-04-22 18:33:27 | INFO     | aiogram.event | Update id=65504142 is handled. Duration 187 ms by bot id=8398659057
+2026-04-22 18:33:28 | INFO     | aiogram.event | Update id=65504143 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 18:33:28 | INFO     | aiogram.event | Update id=65504144 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 18:33:29 | INFO     | aiogram.event | Update id=65504145 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:33:30 | INFO     | bot.database | Заявка #1 сохранена
+2026-04-22 18:33:30 | INFO     | bot.handlers.user | Заявка #1 от 8006327885 сохранена
+2026-04-22 18:33:30 | INFO     | aiogram.event | Update id=65504146 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 18:39:49 | INFO     | aiogram.event | Update id=65504147 is handled. Duration 266 ms by bot id=8398659057
+2026-04-22 18:39:50 | INFO     | aiogram.event | Update id=65504148 is handled. Duration 297 ms by bot id=8398659057
+2026-04-22 18:39:51 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:39:51 | INFO     | aiogram.event | Update id=65504149 is handled. Duration 311 ms by bot id=8398659057
+2026-04-22 18:40:01 | INFO     | bot.database | Заявка #1 принята
+2026-04-22 18:40:01 | INFO     | bot.handlers.admin | Пользователю 8006327885 отправлено сообщение о принятии заявки #1
+2026-04-22 18:40:02 | INFO     | aiogram.event | Update id=65504150 is handled. Duration 592 ms by bot id=8398659057
+2026-04-22 18:40:09 | INFO     | aiogram.event | Update id=65504151 is handled. Duration 266 ms by bot id=8398659057
+2026-04-22 18:40:10 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:40:10 | INFO     | aiogram.event | Update id=65504152 is handled. Duration 295 ms by bot id=8398659057
+2026-04-22 18:41:18 | INFO     | bot.database | Заявка #1 отклонена
+2026-04-22 18:41:18 | INFO     | bot.handlers.admin | Пользователю 8006327885 отправлено сообщение об отклонении заявки #1
+2026-04-22 18:41:18 | INFO     | aiogram.event | Update id=65504153 is handled. Duration 422 ms by bot id=8398659057
+2026-04-22 18:41:26 | INFO     | aiogram.event | Update id=65504154 is handled. Duration 266 ms by bot id=8398659057
+2026-04-22 18:44:04 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:44:04 | INFO     | aiogram.event | Update id=65504155 is handled. Duration 313 ms by bot id=8398659057
+2026-04-22 18:44:13 | INFO     | aiogram.event | Update id=65504156 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 18:44:15 | INFO     | aiogram.event | Update id=65504157 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 18:44:50 | INFO     | aiogram.event | Update id=65504158 is handled. Duration 219 ms by bot id=8398659057
+2026-04-22 18:44:51 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 18:44:51 | INFO     | aiogram.event | Update id=65504159 is handled. Duration 233 ms by bot id=8398659057
+2026-04-22 18:50:53 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:50:53 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:50:53 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:50:53 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:50:53 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:50:53 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:51:05 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:51:05 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:51:05 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:51:06 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:51:06 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:51:06 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:54:05 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:54:05 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:54:05 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:54:05 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:54:05 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:54:05 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:54:10 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:54:10 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:54:10 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:54:10 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:54:10 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:54:11 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:54:16 | INFO     | aiogram.event | Update id=65504160 is not handled. Duration 16 ms by bot id=8398659057
+2026-04-22 18:54:20 | INFO     | aiogram.event | Update id=65504161 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:54:25 | INFO     | aiogram.event | Update id=65504162 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:54:40 | INFO     | aiogram.event | Update id=65504163 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:54:45 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:54:45 | INFO     | aiogram.event | Update id=65504164 is handled. Duration 532 ms by bot id=8398659057
+2026-04-22 18:54:46 | INFO     | aiogram.event | Update id=65504165 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:55:02 | INFO     | aiogram.event | Update id=65504166 is handled. Duration 266 ms by bot id=8398659057
+2026-04-22 18:55:04 | INFO     | aiogram.event | Update id=65504167 is handled. Duration 280 ms by bot id=8398659057
+2026-04-22 18:55:12 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:55:12 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:55:12 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:55:12 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:55:12 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:55:12 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:55:14 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:55:14 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:55:14 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:55:14 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:55:15 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:55:15 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:55:20 | INFO     | aiogram.event | Update id=65504168 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 18:55:20 | INFO     | bot.handlers.admin | Администратор 8006327885 открыл панель
+2026-04-22 18:55:20 | INFO     | aiogram.event | Update id=65504169 is handled. Duration 452 ms by bot id=8398659057
+2026-04-22 18:55:22 | INFO     | aiogram.event | Update id=65504170 is handled. Duration 233 ms by bot id=8398659057
+2026-04-22 18:55:25 | INFO     | aiogram.event | Update id=65504171 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 18:55:48 | INFO     | aiogram.event | Update id=65504172 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 18:55:49 | INFO     | aiogram.event | Update id=65504173 is handled. Duration 469 ms by bot id=8398659057
+2026-04-22 18:55:55 | INFO     | aiogram.event | Update id=65504174 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 18:56:44 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:56:44 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:56:44 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:56:44 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:56:44 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:56:44 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:56:53 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:56:53 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:56:53 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:56:53 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:56:54 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:56:54 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:56:57 | INFO     | aiogram.event | Update id=65504175 is handled. Duration 827 ms by bot id=8398659057
+2026-04-22 18:57:00 | INFO     | aiogram.event | Update id=65504176 is handled. Duration 141 ms by bot id=8398659057
+2026-04-22 18:57:07 | INFO     | bot.handlers.admin | Администратор 8006327885 начал рассылку
+2026-04-22 18:57:07 | INFO     | aiogram.event | Update id=65504177 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:57:09 | INFO     | aiogram.event | Update id=65504178 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:57:12 | INFO     | aiogram.event | Update id=65504179 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 18:57:14 | INFO     | aiogram.event | Update id=65504180 is not handled. Duration 108 ms by bot id=8398659057
+2026-04-22 18:57:14 | ERROR    | aiogram.event | Cause exception while process update id=65504180 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 65, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 18:57:34 | INFO     | aiogram.event | Update id=65504181 is not handled. Duration 108 ms by bot id=8398659057
+2026-04-22 18:57:34 | ERROR    | aiogram.event | Cause exception while process update id=65504181 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 65, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 18:57:40 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 18:57:40 | INFO     | aiogram.event | Update id=65504182 is handled. Duration 188 ms by bot id=8398659057
+2026-04-22 18:57:42 | INFO     | aiogram.event | Update id=65504183 is handled. Duration 530 ms by bot id=8398659057
+2026-04-22 18:57:43 | INFO     | aiogram.event | Update id=65504184 is handled. Duration 327 ms by bot id=8398659057
+2026-04-22 18:57:49 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 18:57:49 | INFO     | aiogram.event | Update id=65504185 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 18:58:03 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 18:58:03 | INFO     | aiogram.event | Update id=65504186 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:58:05 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 18:58:05 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 18:58:05 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 18:58:05 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 18:58:05 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:58:05 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 18:58:11 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 18:58:11 | INFO     | bot.database | БД инициализирована
+2026-04-22 18:58:11 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 18:58:12 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 18:58:12 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 18:58:12 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 18:58:15 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 18:58:16 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 18:58:16 | INFO     | aiogram.event | Update id=65504187 is handled. Duration 764 ms by bot id=8398659057
+2026-04-22 18:58:19 | INFO     | aiogram.event | Update id=65504188 is handled. Duration 264 ms by bot id=8398659057
+2026-04-22 18:58:21 | INFO     | aiogram.event | Update id=65504189 is handled. Duration 219 ms by bot id=8398659057
+2026-04-22 18:58:22 | INFO     | aiogram.event | Update id=65504190 is handled. Duration 141 ms by bot id=8398659057
+2026-04-22 18:58:22 | INFO     | aiogram.event | Update id=65504191 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:58:23 | INFO     | aiogram.event | Update id=65504192 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 18:58:26 | INFO     | bot.database | Заявка #1 сохранена
+2026-04-22 18:58:27 | INFO     | bot.handlers.user | Заявка #1 от 8006327885 сохранена
+2026-04-22 18:58:27 | INFO     | aiogram.event | Update id=65504193 is handled. Duration 280 ms by bot id=8398659057
+2026-04-22 19:07:52 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-04-22 19:07:52 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:08:14 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:08:14 | WARNING  | aiogram.dispatcher | Sleep for 1.159695 seconds and try again... (tryings = 1, bot id = 8398659057)
+2026-04-22 19:08:36 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:08:36 | WARNING  | aiogram.dispatcher | Sleep for 1.476430 seconds and try again... (tryings = 2, bot id = 8398659057)
+2026-04-22 19:08:59 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:08:59 | WARNING  | aiogram.dispatcher | Sleep for 1.947145 seconds and try again... (tryings = 3, bot id = 8398659057)
+2026-04-22 19:09:22 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:09:22 | WARNING  | aiogram.dispatcher | Sleep for 2.569048 seconds and try again... (tryings = 4, bot id = 8398659057)
