@@ -15,6 +15,7 @@ async def init_db():
                 id              INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id         INTEGER NOT NULL,
                 username        TEXT,
+                platform        TEXT NOT NULL,
                 name            TEXT NOT NULL,
                 age             TEXT NOT NULL,
                 adequacy        TEXT NOT NULL,
@@ -28,18 +29,18 @@ async def init_db():
     logger.info("БД инициализирована")
 
 
-async def save_application(user_id, username, name, age, adequacy, help_ready, experience):
+async def save_application(user_id, username, platform, name, age, adequacy, help_ready, experience):
     """Сохраняет заявку, возвращает её ID"""
     now = datetime.now().strftime("%d.%m.%Y %H:%M")
     async with aiosqlite.connect(DB_PATH) as db:
         cur = await db.execute(
             "INSERT INTO applications "
-            "(user_id,username,name,age,adequacy,help_ready,experience,created_at,status)"
-            " VALUES (?,?,?,?,?,?,?,?,?)",
-            (user_id, username, name, age, adequacy, help_ready, experience, now, "новая")
+            "(user_id,username,platform,name,age,adequacy,help_ready,experience,created_at,status)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?)",
+            (user_id, username, platform, name, age, adequacy, help_ready, experience, now, "новая")
         )
         await db.commit()
-        logger.info(f"Заявка #{cur.lastrowid} сохранена")
+        logger.info(f"Заявка #{cur.lastrowid} ({platform}) сохранена")
         return cur.lastrowid
 
 

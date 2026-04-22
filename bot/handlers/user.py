@@ -6,9 +6,9 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 
 from bot.states import ApplicationForm
-from bot.database import save_application, check_existing_application, add_user  # ✅ ДОБАВЬТЕ add_user
+from bot.database import save_application, check_existing_application, add_user
 from bot.config import ADMIN_IDS, CHAT_NAME
-from bot.keyboards.user_kb import get_start_keyboard, get_cancel_keyboard
+from bot.keyboards.user_kb import get_start_keyboard, get_cancel_keyboard, get_platform_keyboard
 
 logger = logging.getLogger(__name__)
 router = Router()
@@ -19,7 +19,6 @@ async def cmd_start(message: Message, state: FSMContext):
     """Приветствие при команде /start"""
     await state.clear()
     
-    # ✅ ДОБАВЛЯЕМ ПОЛЬЗОВАТЕЛЯ В СПИСОК
     user = message.from_user
     await add_user(
         user_id=user.id,
@@ -51,11 +50,9 @@ async def cmd_start(message: Message, state: FSMContext):
     logger.info(f"Пользователь {user.id} запустил бота")
 
 
-# ============ ОСТАЛЬНОЙ КОД ОСТАЁТСЯ БЕЗ ИЗМЕНЕНИЙ ============
-
 @router.callback_query(F.data == "apply")
 async def start_application(callback: CallbackQuery, state: FSMContext):
-    """Начало заполнения анкеты"""
+    """Начало заполнения анкеты - выбор платформы"""
     uid = callback.from_user.id
 
     if await check_existing_application(uid):
@@ -67,9 +64,28 @@ async def start_application(callback: CallbackQuery, state: FSMContext):
         )
         return
 
+    # ✅ ВЫБОР ПЛАТФОРМЫ
+    await callback.message.edit_text(
+        "📱 <b>Выберите платформу:</b>\n\n"
+        "На какой платформе вы хотите стать модератором?",
+        parse_mode="HTML",
+        reply_markup=get_platform_keyboard()
+    )
+    await callback.answer()
+
+
+# ✅ ОБРАБОТЧИК ВЫБОРА ПЛАТФОРМЫ
+@router.callback_query(F.data.startswith("platform_"))
+async def select_platform(callback: CallbackQuery, state: FSMContext):
+    """Обрабатывает выбор платформы"""
+    platform = callback.data.split("_")[1].upper()  # twitch или youtube
+    
     await state.set_state(ApplicationForm.waiting_for_name)
+    await state.update_data(platform=platform)
+    
     await callback.message.edit_text(
         "📝 <b>Анкета на должность модератора</b>\n\n"
+        f"📱 <b>Платформа: {platform}</b>\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━\n"
         "❓ <b>Вопрос 1 из 5</b>\n\n"
         "Как тебя зовут?\n\n"
@@ -78,6 +94,7 @@ async def start_application(callback: CallbackQuery, state: FSMContext):
         reply_markup=get_cancel_keyboard()
     )
     await callback.answer()
+    logger.info(f"Пользователь {callback.from_user.id} выбрал платформу: {platform}")
 
 
 @router.message(ApplicationForm.waiting_for_name)
@@ -85,6 +102,10 @@ async def q1_name(message: Message, state: FSMContext):
     """Ответ на вопрос 1 — имя"""
     await state.update_data(name=message.text)
     await state.set_state(ApplicationForm.waiting_for_age)
+    
+    data = await state.get_data()
+    platform = data.get("platform", "")
+    
     await message.answer(
         "✅ Отлично!\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━\n"
@@ -120,8 +141,7 @@ async def q3_adequacy(message: Message, state: FSMContext):
     await message.answer(
         "━━━━━━━━━━━━━━━━━━━━━━\n"
         "❓ <b>Вопрос 4 из 5</b>\n\n"
-        "Готов ли ты помогать стримеру и отвечать на вопросы зрителей,\n"
-        "если стример не смог ответить?\n\n"
+        "Готов ли ты помогать стримеру и отвечать на вопросы зрителей, если стример не смог ответить? (если да, то каким образом?)\n\n"
         "<i>Ответь: Да/Нет</i>",
         parse_mode="HTML",
         reply_markup=get_cancel_keyboard()
@@ -154,6 +174,7 @@ async def q5_experience(message: Message, state: FSMContext):
         app_id = await save_application(
             user_id=user.id,
             username=user.username,
+            platform=data["platform"],  # ✅ ДОБАВЛЕНО
             name=data["name"],
             age=data["age"],
             adequacy=data["adequacy"],
@@ -168,7 +189,7 @@ async def q5_experience(message: Message, state: FSMContext):
             "Мы свяжемся с вами в ближайшее время. Спасибо! 🙏",
             parse_mode="HTML"
         )
-        logger.info(f"Заявка #{app_id} от {user.id} сохранена")
+        logger.info(f"Заявка #{app_id} ({data['platform']}) от {user.id} сохранена")
     except Exception as e:
         logger.error(f"Ошибка сохранения заявки: {e}")
         await state.clear()

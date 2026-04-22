@@ -1863,3 +1863,717 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2026-04-22 19:08:59 | WARNING  | aiogram.dispatcher | Sleep for 1.947145 seconds and try again... (tryings = 3, bot id = 8398659057)
 2026-04-22 19:09:22 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
 2026-04-22 19:09:22 | WARNING  | aiogram.dispatcher | Sleep for 2.569048 seconds and try again... (tryings = 4, bot id = 8398659057)
+2026-04-22 19:09:45 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:09:45 | WARNING  | aiogram.dispatcher | Sleep for 3.255286 seconds and try again... (tryings = 5, bot id = 8398659057)
+2026-04-22 19:10:10 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:10:10 | WARNING  | aiogram.dispatcher | Sleep for 4.266092 seconds and try again... (tryings = 6, bot id = 8398659057)
+2026-04-22 19:10:35 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:10:35 | WARNING  | aiogram.dispatcher | Sleep for 5.238905 seconds and try again... (tryings = 7, bot id = 8398659057)
+2026-04-22 19:11:01 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:11:01 | WARNING  | aiogram.dispatcher | Sleep for 4.949678 seconds and try again... (tryings = 8, bot id = 8398659057)
+2026-04-22 19:11:27 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:11:27 | WARNING  | aiogram.dispatcher | Sleep for 5.102506 seconds and try again... (tryings = 9, bot id = 8398659057)
+2026-04-22 19:11:53 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:11:53 | WARNING  | aiogram.dispatcher | Sleep for 5.113537 seconds and try again... (tryings = 10, bot id = 8398659057)
+2026-04-22 19:12:20 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:12:20 | WARNING  | aiogram.dispatcher | Sleep for 4.964720 seconds and try again... (tryings = 11, bot id = 8398659057)
+2026-04-22 19:12:46 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:12:46 | WARNING  | aiogram.dispatcher | Sleep for 4.925081 seconds and try again... (tryings = 12, bot id = 8398659057)
+2026-04-22 19:13:12 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:13:12 | WARNING  | aiogram.dispatcher | Sleep for 4.936914 seconds and try again... (tryings = 13, bot id = 8398659057)
+2026-04-22 19:13:38 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:13:38 | WARNING  | aiogram.dispatcher | Sleep for 4.915599 seconds and try again... (tryings = 14, bot id = 8398659057)
+2026-04-22 19:14:04 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:14:04 | WARNING  | aiogram.dispatcher | Sleep for 5.189161 seconds and try again... (tryings = 15, bot id = 8398659057)
+2026-04-22 19:14:30 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:14:30 | WARNING  | aiogram.dispatcher | Sleep for 5.071361 seconds and try again... (tryings = 16, bot id = 8398659057)
+2026-04-22 19:14:56 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:14:56 | WARNING  | aiogram.dispatcher | Sleep for 5.043014 seconds and try again... (tryings = 17, bot id = 8398659057)
+2026-04-22 19:15:22 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:15:22 | WARNING  | aiogram.dispatcher | Sleep for 4.941434 seconds and try again... (tryings = 18, bot id = 8398659057)
+2026-04-22 19:15:48 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-22 19:15:48 | WARNING  | aiogram.dispatcher | Sleep for 4.898677 seconds and try again... (tryings = 19, bot id = 8398659057)
+2026-04-22 19:16:07 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:16:07 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:16:07 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:16:07 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:34:55 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:35:45 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:35:45 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:35:45 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:35:45 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:35:52 | ERROR    | __main__ | ❌ Критическая ошибка: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Подключение к сети было разорвано локальной системой]
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1310, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\сын ск\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+ConnectionAbortedError: [WinError 1236] Подключение к сети было разорвано локальной системой
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 170, in make_request
+    async with session.post(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Подключение к сети было разорвано локальной системой]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\main.py", line 77, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 1277, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Подключение к сети было разорвано локальной системой]
+2026-04-22 19:35:53 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:35:58 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:35:58 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:35:58 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:35:58 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:35:59 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:35:59 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:36:03 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:36:04 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:36:04 | INFO     | aiogram.event | Update id=65504221 is handled. Duration 733 ms by bot id=8398659057
+2026-04-22 19:36:06 | INFO     | aiogram.event | Update id=65504222 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 19:36:32 | INFO     | aiogram.event | Update id=65504223 is handled. Duration 280 ms by bot id=8398659057
+2026-04-22 19:36:48 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: TWITCH
+2026-04-22 19:36:48 | INFO     | aiogram.event | Update id=65504224 is handled. Duration 311 ms by bot id=8398659057
+2026-04-22 19:36:59 | INFO     | bot.handlers.user | Пользователь 8006327885 отменил анкету
+2026-04-22 19:36:59 | INFO     | aiogram.event | Update id=65504225 is handled. Duration 219 ms by bot id=8398659057
+2026-04-22 19:38:17 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:38:17 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 19:38:17 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:38:17 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:38:17 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:38:17 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:38:19 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:38:19 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:38:19 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:38:19 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:38:20 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:38:20 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:38:25 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:38:26 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:38:26 | INFO     | aiogram.event | Update id=65504226 is handled. Duration 750 ms by bot id=8398659057
+2026-04-22 19:38:27 | INFO     | aiogram.event | Update id=65504227 is handled. Duration 264 ms by bot id=8398659057
+2026-04-22 19:38:28 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: YOUTUBE
+2026-04-22 19:38:28 | INFO     | aiogram.event | Update id=65504228 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:38:30 | INFO     | bot.handlers.user | Пользователь 8006327885 отменил анкету
+2026-04-22 19:38:30 | INFO     | aiogram.event | Update id=65504229 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:39:10 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:39:10 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 19:39:10 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:39:10 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:39:10 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:39:10 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:39:13 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:39:13 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:39:13 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:39:13 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:39:13 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:39:14 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:39:14 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:39:15 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:39:15 | INFO     | aiogram.event | Update id=65504230 is handled. Duration 844 ms by bot id=8398659057
+2026-04-22 19:39:17 | INFO     | aiogram.event | Update id=65504231 is handled. Duration 313 ms by bot id=8398659057
+2026-04-22 19:39:18 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: TIKTOK
+2026-04-22 19:39:18 | INFO     | aiogram.event | Update id=65504232 is handled. Duration 265 ms by bot id=8398659057
+2026-04-22 19:39:21 | INFO     | aiogram.event | Update id=65504233 is handled. Duration 171 ms by bot id=8398659057
+2026-04-22 19:39:22 | INFO     | aiogram.event | Update id=65504234 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 19:39:22 | INFO     | aiogram.event | Update id=65504235 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 19:39:28 | INFO     | aiogram.event | Update id=65504236 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 19:39:30 | INFO     | bot.database | Заявка #1 (TIKTOK) сохранена
+2026-04-22 19:39:30 | INFO     | bot.handlers.user | Заявка #1 (TIKTOK) от 8006327885 сохранена
+2026-04-22 19:39:30 | INFO     | aiogram.event | Update id=65504237 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 19:39:52 | INFO     | aiogram.event | Update id=65504238 is handled. Duration 360 ms by bot id=8398659057
+2026-04-22 19:39:54 | INFO     | bot.handlers.admin | Администратор 1226825444 удалил 1 заявок
+2026-04-22 19:39:54 | INFO     | aiogram.event | Update id=65504239 is handled. Duration 217 ms by bot id=8398659057
+2026-04-22 19:39:56 | INFO     | aiogram.event | Update id=65504240 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:39:59 | INFO     | aiogram.event | Update id=65504241 is handled. Duration 110 ms by bot id=8398659057
+2026-04-22 19:40:01 | INFO     | aiogram.event | Update id=65504242 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 19:40:03 | INFO     | aiogram.event | Update id=65504243 is not handled. Duration 157 ms by bot id=8398659057
+2026-04-22 19:40:03 | ERROR    | aiogram.event | Cause exception while process update id=65504243 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 65, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 19:40:19 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:40:20 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:40:20 | INFO     | aiogram.event | Update id=65504244 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 19:40:21 | INFO     | aiogram.event | Update id=65504245 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:40:23 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: TWITCH
+2026-04-22 19:40:23 | INFO     | aiogram.event | Update id=65504246 is handled. Duration 219 ms by bot id=8398659057
+2026-04-22 19:40:25 | INFO     | aiogram.event | Update id=65504247 is handled. Duration 328 ms by bot id=8398659057
+2026-04-22 19:40:25 | INFO     | aiogram.event | Update id=65504249 is handled. Duration 203 ms by bot id=8398659057
+2026-04-22 19:40:25 | INFO     | bot.database | Заявка #2 (TWITCH) сохранена
+2026-04-22 19:40:25 | INFO     | aiogram.event | Update id=65504248 is handled. Duration 515 ms by bot id=8398659057
+2026-04-22 19:40:25 | INFO     | bot.handlers.user | Заявка #2 (TWITCH) от 8006327885 сохранена
+2026-04-22 19:40:25 | INFO     | aiogram.event | Update id=65504251 is handled. Duration 171 ms by bot id=8398659057
+2026-04-22 19:40:26 | INFO     | aiogram.event | Update id=65504250 is handled. Duration 703 ms by bot id=8398659057
+2026-04-22 19:40:29 | INFO     | aiogram.event | Update id=65504252 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 19:40:46 | INFO     | aiogram.event | Update id=65504253 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 19:40:46 | ERROR    | aiogram.event | Cause exception while process update id=65504253 by bot id=8398659057
+NameError: name 'InlineKeyboardButton' is not defined
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 78, in cb_view_applications
+    reply_markup=get_applications_list_keyboard(apps)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 422, in get_applications_list_keyboard
+    rows.append([InlineKeyboardButton(
+                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'InlineKeyboardButton' is not defined
+2026-04-22 19:40:48 | INFO     | aiogram.event | Update id=65504254 is handled. Duration 235 ms by bot id=8398659057
+2026-04-22 19:40:51 | INFO     | aiogram.event | Update id=65504255 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 19:40:52 | INFO     | aiogram.event | Update id=65504256 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 19:40:52 | ERROR    | aiogram.event | Cause exception while process update id=65504256 by bot id=8398659057
+NameError: name 'InlineKeyboardButton' is not defined
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 78, in cb_view_applications
+    reply_markup=get_applications_list_keyboard(apps)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 422, in get_applications_list_keyboard
+    rows.append([InlineKeyboardButton(
+                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'InlineKeyboardButton' is not defined
+2026-04-22 19:41:08 | INFO     | aiogram.event | Update id=65504257 is not handled. Duration 0 ms by bot id=8398659057
+2026-04-22 19:41:08 | ERROR    | aiogram.event | Cause exception while process update id=65504257 by bot id=8398659057
+NameError: name 'InlineKeyboardButton' is not defined
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 78, in cb_view_applications
+    reply_markup=get_applications_list_keyboard(apps)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 422, in get_applications_list_keyboard
+    rows.append([InlineKeyboardButton(
+                 ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'InlineKeyboardButton' is not defined
+2026-04-22 19:42:18 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:42:18 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 19:42:18 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:42:18 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:42:18 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:42:18 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:42:21 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:42:21 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:42:21 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:42:22 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:42:22 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:42:22 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:42:30 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:42:30 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:42:30 | INFO     | aiogram.event | Update id=65504258 is handled. Duration 811 ms by bot id=8398659057
+2026-04-22 19:42:31 | INFO     | aiogram.event | Update id=65504259 is handled. Duration 234 ms by bot id=8398659057
+2026-04-22 19:42:32 | INFO     | aiogram.event | Update id=65504260 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:42:32 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: TIKTOK
+2026-04-22 19:42:32 | INFO     | aiogram.event | Update id=65504261 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:42:34 | INFO     | aiogram.event | Update id=65504262 is handled. Duration 141 ms by bot id=8398659057
+2026-04-22 19:42:34 | INFO     | aiogram.event | Update id=65504263 is not handled. Duration 109 ms by bot id=8398659057
+2026-04-22 19:42:34 | ERROR    | aiogram.event | Cause exception while process update id=65504263 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 67, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 19:42:35 | INFO     | aiogram.event | Update id=65504264 is handled. Duration 172 ms by bot id=8398659057
+2026-04-22 19:42:35 | INFO     | aiogram.event | Update id=65504265 is handled. Duration 109 ms by bot id=8398659057
+2026-04-22 19:42:36 | INFO     | aiogram.event | Update id=65504266 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 19:42:37 | INFO     | bot.database | Заявка #1 (TIKTOK) сохранена
+2026-04-22 19:42:37 | INFO     | bot.handlers.user | Заявка #1 (TIKTOK) от 8006327885 сохранена
+2026-04-22 19:42:37 | INFO     | aiogram.event | Update id=65504267 is handled. Duration 155 ms by bot id=8398659057
+2026-04-22 19:42:45 | INFO     | aiogram.event | Update id=65504268 is handled. Duration 390 ms by bot id=8398659057
+2026-04-22 19:42:46 | INFO     | aiogram.event | Update id=65504269 is handled. Duration 217 ms by bot id=8398659057
+2026-04-22 19:42:46 | INFO     | aiogram.event | Update id=65504270 is not handled. Duration 344 ms by bot id=8398659057
+2026-04-22 19:42:46 | ERROR    | aiogram.event | Cause exception while process update id=65504270 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 90, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 19:42:47 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 19:42:47 | INFO     | aiogram.event | Update id=65504271 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:42:53 | INFO     | bot.database | Заявка #1 принята
+2026-04-22 19:42:53 | INFO     | bot.handlers.admin | Пользователю 8006327885 отправлено сообщение о принятии заявки #1
+2026-04-22 19:42:54 | INFO     | aiogram.event | Update id=65504272 is handled. Duration 422 ms by bot id=8398659057
+2026-04-22 19:42:57 | INFO     | aiogram.event | Update id=65504273 is not handled. Duration 311 ms by bot id=8398659057
+2026-04-22 19:42:57 | ERROR    | aiogram.event | Cause exception while process update id=65504273 by bot id=8398659057
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\bot\handlers\admin.py", line 90, in cb_view_applications
+    await callback.message.edit_text(
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\bot.py", line 480, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\moderator_bot\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-04-22 19:42:58 | INFO     | bot.handlers.admin | Администратор 1226825444 открыл заявку #1
+2026-04-22 19:42:58 | INFO     | aiogram.event | Update id=65504274 is handled. Duration 296 ms by bot id=8398659057
+2026-04-22 19:48:05 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:48:05 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 19:48:05 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:48:05 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:48:05 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:48:05 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:48:07 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:48:07 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:48:07 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:48:08 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:48:08 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:48:08 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:48:15 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users
+2026-04-22 19:48:16 | INFO     | bot.handlers.user | Пользователь 8006327885 запустил бота
+2026-04-22 19:48:16 | INFO     | aiogram.event | Update id=65504275 is handled. Duration 780 ms by bot id=8398659057
+2026-04-22 19:48:18 | INFO     | aiogram.event | Update id=65504276 is handled. Duration 296 ms by bot id=8398659057
+2026-04-22 19:48:19 | INFO     | bot.handlers.user | Пользователь 8006327885 выбрал платформу: TWITCH
+2026-04-22 19:48:19 | INFO     | aiogram.event | Update id=65504277 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:48:23 | INFO     | aiogram.event | Update id=65504278 is handled. Duration 125 ms by bot id=8398659057
+2026-04-22 19:48:23 | INFO     | aiogram.event | Update id=65504279 is handled. Duration 140 ms by bot id=8398659057
+2026-04-22 19:48:25 | INFO     | aiogram.event | Update id=65504280 is handled. Duration 109 ms by bot id=8398659057
+2026-04-22 19:48:33 | INFO     | bot.handlers.user | Пользователь 8006327885 отменил анкету
+2026-04-22 19:48:33 | INFO     | aiogram.event | Update id=65504281 is handled. Duration 250 ms by bot id=8398659057
+2026-04-22 19:49:28 | INFO     | aiogram.dispatcher | Polling stopped
+2026-04-22 19:49:28 | ERROR    | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-22 19:49:28 | WARNING  | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8398659057)
+2026-04-22 19:49:28 | INFO     | __main__ | ⛔ Бот остановлен
+2026-04-22 19:49:28 | INFO     | aiogram.dispatcher | Polling stopped for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:49:28 | INFO     | __main__ | ⛔ Остановлено пользователем (Ctrl+C)
+2026-04-22 19:49:30 | INFO     | __main__ | 🔧 Инициализация базы данных...
+2026-04-22 19:49:30 | INFO     | bot.database | БД инициализирована
+2026-04-22 19:49:30 | INFO     | __main__ | 🌐 Прокси не используется
+2026-04-22 19:49:30 | INFO     | __main__ | 🚀 Бот запускается...
+2026-04-22 19:49:31 | INFO     | aiogram.dispatcher | Start polling
+2026-04-22 19:49:31 | INFO     | aiogram.dispatcher | Run polling for bot @klyrrii_moderationbot id=8398659057 - 'Klyrrii Moderation'
+2026-04-22 19:49:33 | INFO     | bot.database | Пользователь 8006327885 добавлен/обновлен в таблицу users

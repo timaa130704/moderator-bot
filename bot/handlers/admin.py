@@ -4,8 +4,10 @@ from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton  # ✅ ДОБАВЬТЕ ЭТУ СТРОКУ
 
 from bot.filters import IsAdmin
+# ... остальные импорты
 from bot.states import AdminActions
 from bot.database import (
     get_all_applications,
@@ -70,6 +72,21 @@ async def cb_view_applications(callback: CallbackQuery):
         )
         await callback.answer()
         return
+    
+    try:
+        await callback.message.edit_text(
+            f"📋 <b>Список заявок</b>\n\n"
+            f"Всего: <b>{len(apps)}</b>\n\n"
+            "Нажмите на заявку для просмотра:",
+            parse_mode="HTML",
+            reply_markup=get_applications_list_keyboard(apps)
+        )
+    except Exception:
+        # Если сообщение уже такое же — просто ответим
+        await callback.answer()
+        return
+    
+    await callback.answer()
     await callback.message.edit_text(
         f"📋 <b>Список заявок</b>\n\n"
         f"Всего: <b>{len(apps)}</b>\n\n"
@@ -100,9 +117,11 @@ async def cb_view_detail(callback: CallbackQuery, state: FSMContext):
         display = f"ID: {uid}"
 
     status_text = f"<b>Статус:</b> {app['status']}\n\n" if app.get('status') else ""
+    platform = app.get('platform', 'UNKNOWN')  # ✅ ДОБАВЛЕНО
 
     text = (
         f"📄 <b>Заявка #{app['id']}</b>  |  {app['created_at']}\n\n"
+        f"📱 <b>Платформа:</b> {platform}\n\n"  # ✅ ПОКАЗЫВАЕМ ПЛАТФОРМУ
         f"👤 <b>Пользователь:</b> {display}\n"
         f"🔗 <a href=\"{link}\">Открыть профиль</a>\n\n"
         f"━━━━━━━━━━━━━━━━━━\n\n"
@@ -404,3 +423,24 @@ async def cb_cancel_clear(callback: CallbackQuery, state: FSMContext):
         reply_markup=get_admin_menu_keyboard()
     )
     await callback.answer("Отменено")
+
+def get_applications_list_keyboard(applications):
+    """Список заявок — каждая отдельной кнопкой с платформой"""
+    rows = []
+    for app in applications:
+        if app["username"]:
+            label = f"@{app['username']}"
+        else:
+            label = f"ID {app['user_id']}"
+        
+        platform = app.get('platform', 'UNKNOWN')
+        
+        rows.append([InlineKeyboardButton(
+            text=f"#{app['id']} | {platform} | {label} | {app['created_at']}",
+            callback_data=f"app_{app['id']}"
+        )])
+    rows.append([InlineKeyboardButton(
+        text="◀️ Назад",
+        callback_data="admin_panel"
+    )])
+    return InlineKeyboardMarkup(inline_keyboard=rows)

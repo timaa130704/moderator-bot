@@ -1,3 +1,4 @@
+# bot/keyboards/user_kb.py
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
@@ -22,4 +23,17 @@ def get_cancel_keyboard():
         text="❌ Отменить заполнение",
         callback_data="cancel_form"
     )]]
+    return InlineKeyboardMarkup(inline_keyboard=rows)
+
+
+# ✅ ОБНОВЛЕНО: TikTok вместо YouTube
+def get_platform_keyboard():
+    """Выбор платформы (Twitch или TikTok)"""
+    rows = [
+        [
+            InlineKeyboardButton(text="🎵 TikTok", callback_data="platform_tiktok"),
+            InlineKeyboardButton(text="📱 Twitch", callback_data="platform_twitch")
+        ],
+        [InlineKeyboardButton(text="❌ Отмена", callback_data="cancel_form")]
+    ]
     return InlineKeyboardMarkup(inline_keyboard=rows)
